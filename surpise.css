@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #8cd3ed; /* Optional background */
+    font-family: "Press Start 2P";
+}
+
+/* Slow Bouncing Effect */
+@keyframes slowBounce {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Ensure the div itself is centered */
+.centered-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust the image size if necessary */
+.centered-image img {
+    max-width: 100%; /* Prevents overflow */
+    height: auto;
+    box-shadow: 1px 1px 10px black;
+}
+
+.yay{
+    font-size: 40px;
+    animation: slowBounce 0.5s ease-in-out infinite;
+}
